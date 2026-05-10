@@ -1,6 +1,8 @@
 var input = document.querySelector(".inc");
 var buttons = document.querySelectorAll("input[type='button']");
-
+window.addEventListener('offline',function (){
+    alert("No internet conection")
+})
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function () {
         var value = this.value;
